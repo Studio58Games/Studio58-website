@@ -1,0 +1,78 @@
+.member-list {
+    display: flex;
+    margin: auto;
+    max-width: 1300px;
+}
+
+.member {
+    border-radius: 25px;
+    display: flex;
+    margin: auto;
+    width: min(600px, 50%);
+    height: auto;
+    background-color: #ff5e0022;
+}
+
+.member p {
+    margin: 0px 20px 0px 30px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: large;
+    line-height: 1.2;
+}
+
+.member-info {
+    display: table-row;
+}
+
+.name {
+    color: orange;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.bio {
+    color: floralwhite;
+}
+
+.job {
+    padding-top: 20px;
+    color: floralwhite;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.profile-pic {
+    border-radius: 25px;
+    display: block;
+    object-fit: cover;
+    width: 40%;
+    height: 500px;
+}
+
+@media screen and (max-width: 1250px) {
+    .member-list {
+        display: block;
+        max-width: 100%;
+    }
+
+    .member {
+        margin-bottom: 50px;
+        width: 600px;
+    }
+
+    .member p {
+        font-size: large;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .member {
+        width: 90%;
+    }
+
+    .member p {
+        font-size: 15px;
+    }
+}

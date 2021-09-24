@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Studio 58 | How it started</title>
+    <link rel="stylesheet" href="../../styles/templateStyle.css">
+    <link rel="stylesheet" href="../../styles/articles/2021/how-it-started.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="../../script.js"></script>
+</head>
+
+
+<header>
+    <!-- Logo -->
+    <a class="logo_container" href="../../../index.html">
+        <img class="animated_logo" src="../../../res/animated_logo.gif">
+    </a>
+
+    <!-- Navigation toolbar -->
+    <div class="topnav" id="myTopnav">
+        <ul>
+            <li><a href="../../news.html">News</a></li>
+            <li><a href="../../games.html">Games</a></li>
+            <li><a href="../../team.html">Team</a></li>
+            <li><a href="../../contact.html">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a></li>
+        </ul>
+    </div>
+
+    <!-- Social media -->
+    <div class="social">
+        <a target=”_blank” href="https://www.facebook.com" class="zooming fa fa-facebook"></a>
+        <a target=”_blank” href="https://www.twitter.com" class="zooming fa fa-twitter"></a>
+        <a target=”_blank” href="https://www.youtube.com/channel/UCm0to1SLyxIK5jlIj9rdYwQ" class="zooming fa fa-youtube"></a>
+    </div>
+
+    <!-- The background video -->
+    <video autoplay muted loop id="background">
+    <source src="../../../res/background.mp4" type="video/mp4">
+    </video>
+</header>
+
+<body>
+    <!-- Title -->
+    <h1 class="title">How it all started</h1>
+
+    <div id="subtitle">Written by Pierre</div>
+
+    <br><br><br><br>
+
+    <div class="container">
+        <h2>
+            Two curious kids : Vincent and Pierre
+        </h2>
+
+        <p>
+            Before graduating in the computer science school where we met, Vincent and I didn't know much about programmation.
+            We both had had a few lessons during our preparatory class and liked it. 
+            But when we really got into it we fell in love with it. As we got along pretty well we naturally started
+            making school projects together. And when we discovered oriented object programmation we decided 
+            to train through a project of our own : Mars Underwold.
+
+            <br><br>
+
+            <div class="wrapped-image">
+                <a href="../../games/mars-underworld.html"><img class="zooming" id="mars-underworld" src="../../../res/mars-underworld/background.png"></a>
+                <p>
+                    Mars Underwold is the first game we ever made. It was a RPG with a lot of funny 
+                    content and private jokes. 
+                    We were so hyped while making it that we kept adding stuff in the game without 
+                    realising it.
+        
+                    <br><br>
+        
+                    As we had no knowledge about coding games and graphical interfaces we decided to 
+                    print the game in a linux console (therefore only with text). Quickly, we added 
+                    ascii-arts that we found online to give life to the game. And it did the trick.
+                    In the end we had so much fun we knew we would make new games in the future.
+                </p>
+            </div>
+        </p>
+
+        <h2>
+            One summer to learn
+        </h2>
+
+        <p>
+            When our first school year ended Vincent and I spent 2 months on our own. I knew I had a lot
+            to learn to make games properly (and not just displaying text). So during the summer of 2020,
+            I spent the most important part of my time learning how to make 3D games. I had been advised
+            to directly learn how to make games with game engines like Unity or Unreal. But I was too 
+            curious about how these softwares were working. I wanted to code my own engine to understand 
+            how they worked.
+
+            <br><br>
+
+            And so I learned that a framework is an environnement that gives you functions you can 
+            call to render objects on a screen while an engine calls your code to give caracteristics 
+            to what will be rendered. In other words, when using a framework you are the master
+            but it takes a lot more time to do what you want. On the other hand a game engine is the 
+            master and you feed it with code.
+
+            <br><br>
+
+            <div class="wrapped-image">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+                <p>
+                So I decided to use the framework that was used to create Minecraft : LWJGL. Basically, 
+                this is a wrapper of OpenGL functions. OpenGL is an application programming interface for
+                rendering 2D and 3D vector graphics. What it allows you to do is communicate stuff between
+                your computer processor to your graphics card. 
+
+                <br><br>
+
+                I learned everything from the excellent series of video from ThinMatrix. Rendering 3D objets,
+                textures, shaders (coloring effets like lighting and shadows), graphical user interfaces,
+                particules rendering, water simulation, terrain generation, ...  In the end I made a game race
+                game where you control a chicken riding a raft and dodge trunks and cannonballs.
+
+                </p>
+            </div>
+
+        </p>
+
+        <h2>
+            Exporting games to consoles
+        </h2>
+
+        <p>
+            Now that I had learned the basis I wanted to create games with Vincent on a custom engine.
+            The problem was that the engine I had written this summer could not export games to consoles 
+            like PS4 or the Nintendo Switch. After doing some research I realized that this was a 
+            difficult task so I had to choose a new framework that could do it. I finally chose Monogame 
+            because it was told to give a lot of freedom to the developper (and because one of my 
+            favorite game Celeste had been created with it).
+
+            <br><br>
+
+            In february 2021, Vincent and I made our second finished game (Star Breakout)  on this 
+            engine and exported it on Windows, macOS and Linux. It was exceptionnally satisfying to finally make a 
+            simple but complete game with graphics, music and gameplay, one year after Mars UnderWorld.
+        </p>
+    </div>
+    <br><br><br><br>
+</body>

@@ -1,0 +1,98 @@
+.container {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  width: 800px;
+	text-align: center;
+  margin: auto;
+  display: block;
+
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+}
+
+h2 {
+  font-size: 21px;
+  color: #aaaaff;
+  margin-bottom: 40px;
+}
+
+h2:not(:first-child) {
+  margin-top: 60px;
+}
+
+p {
+  text-align: justify;
+  margin: auto;
+  display: block;
+	font-size: 13px;
+	line-height: 1.5;
+  letter-spacing: -0.1em;
+}
+
+#background-image {
+  position: none;
+  image-rendering: pixelated;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  margin: auto;
+  min-width: 50%;
+  max-width: 100%;
+  z-index: -1;
+}
+
+#fight {
+  display: block;
+  width: 900px;
+}
+
+#fightcrop {
+  display: none;
+}
+
+@media screen and (max-width:1400px) {
+  .container {
+    width: 700px;
+  }
+
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  h2:not(:first-child) {
+    margin-top: 40px;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  #background-image {
+    display: none;
+  }
+
+  .container {
+    width: min(700px, 90%);
+    position: relative;
+    top: 20px;
+    left: 0%;
+    transform: translate(0%, 0%);
+  }
+
+  #fight {
+    display: none;
+  }
+
+  #fightcrop {
+    display: block;
+    width: min(500px, 100%);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .title {
+    font-size: 35px;
+  }  
+}

@@ -1,0 +1,117 @@
+
+<head>
+    <title>Studio 58 | Star Breakout</title>
+    <link rel="stylesheet" href="../styles/templateStyle.css">
+    <link rel="stylesheet" href="../styles/games/star_breakout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="../script.js"></script>
+</head>
+
+
+<header>
+    <!-- Logo -->
+    <a class="logo_container" href="../../index.html">
+        <img class="animated_logo" src="../../res/animated_logo.gif">
+    </a>
+
+    <!-- Navigation toolbar -->
+    <div class="topnav" id="myTopnav">
+        <ul>
+            <li><a href="../news.html">News</a></li>
+            <li><a href="../games.html">Games</a></li>
+            <li><a href="../team.html">Team</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a></li>
+        </ul>
+    </div>
+
+    <!-- Social media -->
+    <div class="social">
+        <a target=”_blank” href="https://www.facebook.com" class="zooming fa fa-facebook"></a>
+        <a target=”_blank” href="https://www.twitter.com" class="zooming fa fa-twitter"></a>
+        <a target=”_blank” href="https://www.youtube.com/channel/UCm0to1SLyxIK5jlIj9rdYwQ" class="zooming fa fa-youtube"></a>
+    </div>
+
+    <!-- The background video -->
+    <video autoplay muted loop id="background">
+    <source src="../../res/background.mp4" type="video/mp4">
+    </video>
+</header>
+
+<body>
+    <!-- Title -->
+    <img class="game_title_img" src="../../res/star-breakout/Title.png">
+
+    <div class="disabled">
+        <ul class="container">
+            <li class="left">
+                <h2>A space shooter mixed with bullet hell</h2>
+
+                <p class="intro">
+                    Avoid corn to flee as far as possible in this <strong>retro endless auto-scroller</strong> 
+                    game and try to beat your high score!
+                    <br>
+                    Made for a 24h Game Jam, this game lets you come aboard a spaceship and drive it across space
+                    to <strong>avoid corn ears</strong> flying all around you.
+                    <br>
+                </p>
+                <div class="videowrapper">
+                    <iframe
+                        src="https://www.youtube.com/embed/IVobz-i5uFI">
+                    </iframe>
+                </div>
+                <p>
+                    When you get overwhelmed by corn, you can shoot with your <strong>chicken launcher</strong> to have them eat the corn.
+                    But use your eggs wisely, you don't have many.
+                    <br>
+                    However, you may come across <strong>space stations</strong> to refill your egg containers, but beware of evil corns!
+                </p>
+
+                <!-- Links -->
+                <ul class="links">
+                    <li><a target=”_blank” href="https://bronino.itch.io/star-breakout">Get the game on <em class="itchio">itch.io</em><br></a></li>
+                    <li><a target=”_blank” href="https://open.spotify.com/track/5CvzgHLnezl7GM8yjKg2zg?si=6844d94d10494130">Listen the soundtrack on <em class="spotify">Spotify</em></a></li>
+                </ul>
+
+                <br><br>
+            </li>
+
+            <li class="right">
+                <h2>Features</h2>
+                <ul>
+                    <li class="item">2 different gameplay phases</li>
+                    <li class="item">Adaptative soundtrack</li>
+                    <li class="item">Simple and editable controls</li>
+                </ul>
+                
+                <h2>Screenshots</h2>
+                <img class="screenshot" src="../../res/star-breakout/Controls.png"> 
+                <img class="screenshot" src="../../res/star-breakout/Explosions.png"> 
+
+                <h2>Technical specification</h2>
+
+                <h3>Programming</h3>
+                <ul>
+                    <li class="item">Visual Studio C#</li>
+                    <li class="item">Chicken Engine (Monogame, XNA)</li>
+                </ul>
+
+                <h3>Visuals</h3>
+                <ul>
+                    <li class="item">Pyxel Edit</li>
+                </ul>
+
+                <h3>Music, FX</h3>
+                <ul>
+                    <li class="item">Cubase Pro 10</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <br><br>
+</body>

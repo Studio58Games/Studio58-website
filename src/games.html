@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Studio 58 | Games</title>
+    <link rel="stylesheet" href="styles/templateStyle.css">
+    <link rel="stylesheet" href="styles/games.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+
+<header>
+    <!-- Logo -->
+    <a class="logo_container" href="../index.html">
+        <img class="animated_logo" src="../res/animated_logo.gif">
+    </a>
+
+    <!-- Navigation toolbar -->
+    <div class="topnav" id="myTopnav">
+        <ul>
+            <li><a href="news.html">News</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a></li>
+        </ul>
+    </div>
+
+    <!-- Social media -->
+    <div class="social">
+        <a target=”_blank” href="https://www.facebook.com" class="zooming fa fa-facebook"></a>
+        <a target=”_blank” href="https://www.twitter.com" class="zooming fa fa-twitter"></a>
+        <a target=”_blank” href="https://www.youtube.com/channel/UCm0to1SLyxIK5jlIj9rdYwQ" class="zooming fa fa-youtube"></a>
+    </div>
+
+    <!-- The background video -->
+    <video autoplay muted loop id="background">
+    <source src="../res/background.mp4" type="video/mp4">
+    </video>
+</header>
+
+<body>
+    <!-- Title -->
+    <h1 class="title">Games</h1>
+
+    <div class="games-list">
+        <ul>
+            <li>
+                <div class="game-box">
+                    <a class="game-linker" href="games/star_breakout.html">
+                        <img class="game-preview" src="../res/star-breakout/CoverItch.png">
+                    </a>
+                    <p>
+                        <span style="color:#FFFFFF">Star Breakout (24h GameJam)</span><br><br>
+                        Our first finished game on the EGG Engine.<br>
+                        Take a trip down memory lane and experience playing on an arcade terminal again !                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="game-box">
+                    <a class="game-linker" href="games/mars-underworld.html">
+                        <img class="game-preview" src="../res/mars-underworld/Logo.png">
+                    </a>
+                    <p>
+                        <span style="color:#FFFFFF">Mars Underworld</span><br><br>
+                        Our first game ever.<br>
+                        It is not available but it is the start of everything. 
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</body>

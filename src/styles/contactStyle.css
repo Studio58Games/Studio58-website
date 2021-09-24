@@ -1,0 +1,35 @@
+h2, p, .email, .email a {
+    color: white;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+h2 {
+    color: orange;
+    margin-top: 80px;
+    font-size: 30px;
+}
+
+
+.email {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    display: block;
+    font-size: 18px;
+}
+
+.paragraphs {
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-right: 40px;
+}
+
+.paragraphs .social-link {
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+}

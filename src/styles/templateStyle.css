@@ -1,0 +1,226 @@
+/* ======================= BACKGROUND VIDEO ===================== */
+/* Style the video: 100% width and height to cover the entire window */
+#background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+body {background-color: black;}
+
+/* ======================= LOGO ===================== */
+.logo_container {
+  z-index: 1;
+  position: absolute;
+  margin-left: 5px;
+}
+
+.logo_container .animated_logo {
+  image-rendering: pixelated;
+  width: 400%;
+  height: auto;
+}
+
+
+/* ======================= NAVIGATION BAR ===================== */
+header {
+  margin: 0;
+  padding: 0;
+  background: #222222aa;
+  font-family: Arial;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav ul {
+   overflow: hidden;
+   position: relative;
+   list-style: none;
+   background: #222222aa;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+   z-index: 0;
+}
+
+.topnav li {
+  display: inline-block;
+}
+
+.topnav ul li a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  padding: 24px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+  text-transform: uppercase;
+  text-align: center; 
+  font-family: 'Press Start 2P', cursive;
+}
+
+.topnav ul li:not(:last-child) a:hover {
+  background-color: orange;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  .topnav {
+    overflow: hidden;
+  }
+
+  .topnav  ul li a {
+    display: none;
+  }
+  .topnav  ul li a.icon {
+    right: 0;
+    top: 0;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .topnav.responsive {
+    position: relative;
+    overflow: hidden;
+    display: relative;
+  }
+
+  .topnaiv.responsive ul {
+    display: inline;
+  }
+
+  .topnav.responsive ul li .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: right;
+  }
+  .topnav.responsive ul li:first-child {
+    margin-top: 80px;
+    margin-left: 0px;
+  }
+
+  .topnav.responsive ul li a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    min-width: 600px;
+  }
+}
+/*
+.navbar ul {
+   overflow: hidden;
+   position: relative;
+   list-style: none;
+   background: #222222aa;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+   z-index: 0;
+}
+
+.navbar li {
+  display: inline-block;;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #fff;
+  width: 100px;
+  display: block;
+  padding: 25px 20px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center; 
+  font-family: 'Press Start 2P', cursive;
+}
+*/
+
+/* ======================= EFFECTS ===================== */
+
+.zooming {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.zooming:hover {
+	-webkit-transform: scale(1.8);
+	transform: scale(1.8);
+}
+
+/* ======================= SOCIAL ===================== */
+.social {
+  position: absolute;
+  right: 20px;
+  top: 8px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 850px) {
+  .social {
+    display: none;
+  }
+}
+
+/* Style all font awesome icons */
+.social .fa {
+  padding: 15px;
+  font-size: 20px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10%;
+}
+
+/* Add a hover effect if you want */
+.social .fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.social .fa-facebook {
+  color: white;
+}
+
+/* Twitter */
+.social .fa-twitter {
+  color: white;
+}
+
+.social .fa-youtube {
+  color: white;
+}
+
+/* ======================= TITLE ===================== */
+.title {
+  z-index: 1;
+  color: white;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 50px;
+  opacity: 0.7;
+}
